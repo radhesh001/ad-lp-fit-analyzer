@@ -13,12 +13,8 @@ const analyze = async (req, res) => {
   }
 
   try {
-    // Step 1: Scrape the landing page
     const landingPage = await scrapeLandingPage(url);
-
-    // Step 2: Analyze with Gemini
     const report = await analyzeFit(ads, landingPage);
-
     res.json({ success: true, report });
   } catch (error) {
     console.error("Analysis error:", error.message);
