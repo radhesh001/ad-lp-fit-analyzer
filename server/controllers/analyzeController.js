@@ -1,5 +1,5 @@
 import scrapeLandingPage from "../services/scraperService.js";
-import analyzeFit from "../services/geminiService.js";
+import analyzeFit from "../services/GeminiService.js";
 
 const analyze = async (req, res) => {
   const { ads, url } = req.body;
