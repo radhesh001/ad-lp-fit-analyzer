@@ -7,7 +7,7 @@ import MismatchReport from "./components/MismatchReport";
 import AdClusters from "./components/AdClusters";
 import Loader from "./components/Loader";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = import.meta.env.VITE_API_URL || "https://ad-lp-fit-analyzer.onrender.com";
 
 const App = () => {
   const [ads, setAds] = useState([""]);
